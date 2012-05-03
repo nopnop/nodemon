@@ -360,7 +360,7 @@ function getAppScript(program) {
       program.args.splice(debugIndex, 0, '--nodejs');
     }
     // monitor both types - TODO possibly make this an option?
-    program.ext = '.coffee|.js';
+    program.ext = '.coffee|.js|.jade';
     if (!program.options.exec || program.options.exec == 'node') program.options.exec = 'coffee';
 
     // because windows can't find 'coffee', it needs the real file 'coffee.cmd'
