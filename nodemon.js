@@ -508,7 +508,7 @@ exists(ignoreFilePath, function (exist) {
         if (ext) {
           addIgnoreRule('^((?!' + ext + '$).)*$', true);
         } else {
-          addIgnoreRule('^((?!\.js|\.coffee$).)*$', true); // ignores everything except JS
+          addIgnoreRule('^((?!\.js|\.coffee|\.jade$).)*$', true); // ignores everything except JS
         }
       }
     });
